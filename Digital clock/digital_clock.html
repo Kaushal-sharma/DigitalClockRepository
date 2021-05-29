@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        ul li{
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-3">Digital Clock</h1>
+        <ul class="display-4">
+            <li id="hour">00</li><span>:</span>
+            <li id="minut">00</li><span>:</span>
+            <li id="second">00</li>
+        </ul>
+        <button type="button" class="btn btn-success" style="width: 100px; font-size: 2vw;" onclick="start()" id="btn-start">Start</button>
+        <button type="button" class="btn btn-danger" style="width: 100px; font-size: 2vw;" onclick="stop()" id='btn-stop'>Stop</button>
+        <script type="text/JavaScript" src="digital_clock.js"></script>
+        <script src="jquery.js"></script>
+    </div>
+</body>
+</html>
